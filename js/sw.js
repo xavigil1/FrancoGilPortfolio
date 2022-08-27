@@ -1,4 +1,4 @@
-let version = "version 1";
+let version = "version 2";
 const archivos = [
 			'../index.html',
 			'../clock.html',
@@ -6,6 +6,7 @@ const archivos = [
 			'../css/estilos.css',
 			'../css/estilos2.css',
 			'../css/estilos3.css',
+			'../css/navbar.css',
 			'../css/normalize.css',
 			'codigo.js',
 			'codigo2.js',
@@ -38,11 +39,11 @@ self.addEventListener("activate", ()=>{
 
 /*Muestra la informacion en Cache sin Internet*/
 self.addEventListener("fetch", e =>{
-	e.respondWith( async function(){
+	e.respondWith(async function(){
 		const respuestaEnCache = await caches.match(e.request);
 		if (respuestaEnCache){
 			return respuestaEnCache
-		}else{
+		} else{
 			return e.request
 		}
 	})
