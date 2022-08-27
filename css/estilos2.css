@@ -494,10 +494,11 @@ border: 1px solid rgba(106, 33, 199, 0.3);
 
 .principal-item2{
 	padding: 0 50px;
-	/*border: 2px solid red;*/
 	display: flex;
 	width: 100%;
 	color: #606060;
+	justify-content: center;
+	align-items: center;
 }
 
 .principal-item2 h3,
